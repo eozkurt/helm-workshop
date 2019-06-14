@@ -193,7 +193,27 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
 
 ## Installing the Helm Client
 
-If you already have Helm installed, check to see if it is [latest version](https://github.com/helm/helm/releases/latest), then upgrade if need be.
+1. Initialize Helm
+
+    Helm helps you manage Kubernetes applications — Helm Charts helps you define, install, and upgrade even the most complex Kubernetes application. Helm has a CLI component and a server side component called Tiller. 
+    * Initialize Helm and Tiller:
+
+        ```bash
+        kubectl apply -f ~/kubernetes-hackfest/labs/helm-setup-deploy/rbac-config.yaml
+        helm init --service-account tiller --upgrade
+        ```
+
+    * Validate the install (the Helm version may be newer in your lab):
+        ```bash
+        helm version
+        ```
+
+        ```bash
+        Client: &version.Version{SemVer:"v2.12.1", GitCommit:"20adb27c7c5868466912eebdf6664e7390ebe710", GitTreeState:"clean"}
+        Server: &version.Version{SemVer:"v2.12.2", GitCommit:"20adb27c7c5868466912eebdf6664e7390ebe710", GitTreeState:"clean"}
+        ```
+
+        > Note: It can take a minute or so for Tiller to start
 
 ```console
 $ helm version
