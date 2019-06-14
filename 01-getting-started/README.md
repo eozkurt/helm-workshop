@@ -215,43 +215,6 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
 
         > Note: It can take a minute or so for Tiller to start
 
-On Mac, the easiest way to install or upgrade Helm is to use Homebrew.
-
-If you need to install helm:
-
-```console
-$ brew install kubernetes-helm
-```
-
-If you need to upgrade helm:
-
-```console
-$ brew upgrade kubernetes-helm
-```
-
-On Ubuntu:
-
-```console
-$ sudo snap install helm --classic
-```
-
-And on Windows:
-
-```console
-$ choco install kubernetes-helm
-```
-
-> More installation methods are documented in the [documentation for installing
-> Helm](https://docs.helm.sh/using_helm/#installing-helm)
-
-## Initialize Helm and Install Tiller
-
-Once you have Helm ready, you can initialize the local environment and install
-Tiller into your Kubernetes cluster in one step.
-
-```console
-$ helm init
-```
 
 Helm will use whatever Kubernetes cluster your context is pointing to. Use
 `kubectl` to learn about your contexts:
