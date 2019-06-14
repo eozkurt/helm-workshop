@@ -199,7 +199,7 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
     * Initialize Helm and Tiller:
 
         ```bash
-        kubectl apply -f ~/helmworkshop/01-getting-started/rbac-config.yaml
+        kubectl apply -f ~/helm-workshop/01-getting-started/rbac-config.yaml
         helm init --service-account tiller --upgrade
         ```
 
