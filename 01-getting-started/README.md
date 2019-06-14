@@ -1,9 +1,6 @@
-# Getting Started with Helm
 
-Install Helm on your machine and get familiar with the basic commands using the
-official [quickstart guide](https://docs.helm.sh/using_helm/#quickstart)
 
-# Lab 1: Create AKS Cluster
+# Create AKS Cluster
 
 In this lab we will create our Azure Kubernetes Services (AKS) distributed compute cluster.
 
@@ -14,9 +11,8 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
 ## Instructions
 
 1. Login to Azure Portal at http://portal.azure.com.
-2. Open the Azure Cloud Shell and choose Bash Shell (do not choose Powershell)
 
-    ![Azure Cloud Shell](img-cloud-shell.png "Azure Cloud Shell")
+2. Open the Azure Cloud Shell and choose Bash Shell (do not choose Powershell)
 
 3. The first time Cloud Shell is started will require you to create a storage account.
 
