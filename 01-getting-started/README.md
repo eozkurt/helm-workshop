@@ -16,12 +16,6 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
 
 3. The first time Cloud Shell is started will require you to create a storage account.
 
-4. Once your cloud shell is started, clone the workshop repo into the cloud shell environment
-    ```bash
-    git clone https://github.com/Azure/kubernetes-hackfest
-    ```
-
-    > Note: In the cloud shell, you are automatically logged into your Azure subscription.
 
 5. Ensure you are using the correct Azure subscription you want to deploy AKS to.
     ```
