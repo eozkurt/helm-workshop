@@ -215,10 +215,6 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
 
         > Note: It can take a minute or so for Tiller to start
 
-```console
-$ helm version
-```
-
 On Mac, the easiest way to install or upgrade Helm is to use Homebrew.
 
 If you need to install helm:
